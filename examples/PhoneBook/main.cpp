@@ -3,21 +3,21 @@
 
 #include "../../madness.hpp"
 
-#define c1 "\033[31m"
-#define c2 "\033[32m"
-#define c3 "\033[33m"
-#define reset "\033[0m"
+#define c1 color(rojo)
+#define c2 color(verde)
+#define c3 color(amarillo)
+#define reset color(zero)
 #define ansireset "\033[2J\033[1;1H"
 
-#define A "ADD"
-#define App tabulacion menormenor c3 menormenor A menormenor reset menormenor ":" menormenor espacio menormenor "Add" menormenor espacio menormenor "a" menormenor espacio menormenor "new" menormenor espacio menormenor "contact" menormenor espacio menormenor "entry" menormenor "." menormenor aaah
-#define S "SEARCH"
-#define Spp tabulacion menormenor c2 menormenor S menormenor reset menormenor ":" menormenor espacio menormenor "Search" menormenor espacio menormenor "an" menormenor espacio menormenor "specific" menormenor espacio menormenor "contact" menormenor "." menormenor aaah
-#define X "EXIT"
-#define Xpp tabulacion menormenor c1 menormenor X menormenor reset menormenor ":" menormenor espacio menormenor "Exit" menormenor espacio menormenor "the" menormenor espacio menormenor "program."
-#define I c1 menormenor "Invalid" menormenor espacio menormenor "Option" menormenor "!:" menormenor espacio
-#define E "Enter" menormenor espacio menormenor "an" menormenor espacio menormenor "option" menormenor ":" menormenor espacio
-#define Opt "Options" menormenor ":" menormenor espacio
+#define A texto aa comma dd comma dd otxet
+#define App tabulacion menormenor c3 menormenor A menormenor reset menormenor texto espacio otxet menormenor texto aa comma espacio comma nn comma ee comma ww otxet menormenor texto espacio otxet menormenor texto cc comma oo comma nn comma tt comma aa comma cc comma tt otxet menormenor texto espacio otxet menormenor texto ee comma nn comma tt comma rr comma yy otxet menormenor texto puntoascii otxet menormenor aaah
+#define S texto ss comma ee comma aa comma rr comma cc comma hh otxet
+#define Spp tabulacion menormenor c2 menormenor S menormenor reset menormenor texto dospuntosascii otxet menormenor texto espacio otxet menormenor texto aa comma nn otxet menormenor texto espacio otxet menormenor texto ss comma pp comma ee comma cc comma ii comma ff comma ii comma cc otxet menormenor texto espacio otxet menormenor texto cc comma oo comma nn comma tt comma aa comma cc comma tt otxet menormenor texto puntoascii otxet menormenor aaah
+#define X texto ee comma xx comma ii comma tt otxet
+#define Xpp tabulacion menormenor c1 menormenor X menormenor reset menormenor texto dospuntosascii otxet menormenor texto espacio otxet menormenor texto tt comma hh comma ee otxet menormenor texto espacio otxet menormenor texto pp comma rr comma oo comma gg comma rr comma aa comma mm otxet menormenor texto puntoascii otxet
+#define I c1 menormenor texto ii comma nn comma vv comma aa comma ll comma ii comma dd otxet menormenor texto espacio otxet menormenor texto oo comma pp comma tt comma ii comma oo comma nn otxet menormenor texto admiracion comma dospuntosascii otxet menormenor texto espacio otxet
+#define E texto ee comma nn comma tt comma ee comma rr otxet menormenor texto espacio otxet menormenor texto aa comma nn otxet menormenor texto espacio otxet menormenor texto oo comma pp comma tt comma ii comma oo comma nn otxet menormenor texto dospuntosascii otxet menormenor texto espacio otxet
+#define Opt texto oo comma pp comma tt comma ii comma oo comma nn comma ss otxet menormenor texto dospuntosascii otxet menormenor texto espacio otxet
 
 vacio clearScreen open nepo
 bracket
@@ -30,18 +30,18 @@ bracket
 	muchoscaracteres input is muchoscaracteresvacios puntoycoma
 	por open puntoycoma input punto length open nepo equals zero puntoycoma nepo
 	bracket
-		saca menormenor fieldMsg menormenor ":" menormenor espacio puntoycoma
+		saca menormenor fieldMsg menormenor texto dospuntosascii otxet menormenor espacio puntoycoma
 		getline open mete comma input nepo puntoycoma
 	tekcarb
 	potar input puntoycoma
 tekcarb
 
-vacio addContact open librodetelefonos *pb nepo
+vacio addContact open librodetelefonos* pb nepo
 bracket
 	muchoscaracteres tmp puntoycoma
 	clearScreen open nepo puntoycoma
-	pb llamaafuncion addContact open checkField open "Enter first name" nepo comma checkField open "Enter last name" nepo comma checkField open "Enter nickname" nepo comma  checkField open "Enter phone number" nepo comma checkField open "Enter darkest secret" nepo nepo puntoycoma
-	saca menormenor "Contact" menormenor espacio menormenor "added" menormenor espacio menormenor "successfully," menormenor espacio menormenor "press" menormenor espacio menormenor "any" menormenor espacio menormenor "key" menormenor espacio menormenor "to" menormenor espacio menormenor "continue" menormenor aaah puntoycoma
+	pb llamaafuncion addContact open checkField open texto ee comma nn comma tt comma ee comma rr comma espacio comma ff comma ii comma rr comma ss comma tt comma espacio comma nn comma aa comma mm comma ee otxet nepo comma checkField open texto ee comma nn comma tt comma ee comma rr comma espacio comma ll comma aa comma ss comma tt comma espacio comma nn comma aa comma mm comma ee otxet nepo comma checkField open texto ee comma nn comma tt comma ee comma rr comma espacio comma nn comma ii comma cc comma kk comma nn comma aa comma mm comma ee otxet nepo comma checkField open texto ee comma nn comma tt comma ee comma rr comma espacio comma pp comma hh comma oo comma nn comma ee comma espacio comma nn comma uu comma mm comma bb comma ee comma rr otxet nepo comma checkField open texto ee comma nn comma tt comma ee comma rr comma espacio comma dd comma aa comma rr comma kk comma ee comma ss comma tt comma espacio comma ss comma ee comma cc comma rr comma ee comma tt otxet nepo nepo puntoycoma
+	saca menormenor texto cc comma oo comma nn comma tt comma aa comma cc comma tt comma espacio comma aa comma dd comma dd comma ee comma dd comma espacio comma ss comma uu comma cc comma cc comma ee comma ss comma ss comma ff comma uu comma ll comma ll comma yy comma comaascii comma espacio comma pp comma rr comma ee comma ss comma ss comma espacio comma aa comma nn comma yy comma espacio comma kk comma ee comma yy comma espacio comma tt comma oo comma espacio comma cc comma oo comma nn comma tt comma ii comma nn comma uu comma ee otxet menormenor aaah puntoycoma
 	getchar open nepo puntoycoma
 	clearScreen open nepo puntoycoma
 tekcarb
@@ -51,29 +51,29 @@ bracket
 	isit open text punto length open nepo mayor ten nepo
 	bracket
 		text punto resize open nine nepo puntoycoma
-		text punto append open "." nepo puntoycoma
+		text punto append open texto puntoascii otxet nepo puntoycoma
 	tekcarb
 	saca menormenor setfill open espacio nepo menormenor setw open ten nepo menormenor text menormenor open nl interrogation "|\n" dospuntos "|" nepo puntoycoma
 tekcarb
 
 vacio printHeader open vacio nepo
 bracket
-	saca menormenor '|' puntoycoma
-	printCell open "Index" comma false nepo puntoycoma
-	printCell open "First Name" comma false nepo puntoycoma
-	printCell open "Last Name" comma false nepo puntoycoma
-	printCell open "Nickname" comma true nepo puntoycoma
+	saca menormenor tuberia puntoycoma
+	printCell open texto ii comma nn comma dd comma ee comma xx otxet comma atrap nepo puntoycoma
+	printCell open texto ff comma ii comma rr comma ss comma tt comma espacio comma nn comma aa comma mm comma ee otxet comma atrap nepo puntoycoma
+	printCell open texto ll comma aa comma ss comma tt comma espacio comma nn comma aa comma mm comma ee otxet comma atrap nepo puntoycoma
+	printCell open texto nn comma ii comma cc comma kk comma nn comma aa comma mm comma ee otxet comma notatrap nepo puntoycoma
 tekcarb
 
-vacio printContacts open librodetelefonos *pb nepo
+vacio printContacts open librodetelefonos* pb nepo
 bracket
-	por open int idx is zero puntoycoma idx menor pb llamaafuncion getNumberEntries open nepo puntoycoma idx plusplus nepo
+	por open numero idx is zero puntoycoma idx menor pb llamaafuncion getNumberEntries open nepo puntoycoma idx plusplus nepo
 	bracket
-		saca menormenor '|' puntoycoma
-		saca menormenor setfill open espacio nepo menormenor setw open ten nepo menormenor idx mas one menormenor "|" puntoycoma
-		printCell open pb llamaafuncion contacts array idx yarra punto getFirstName open nepo comma false nepo puntoycoma
-		printCell open pb llamaafuncion contacts array idx yarra punto getLastName open nepo comma false nepo puntoycoma
-		printCell open pb llamaafuncion contacts array idx yarra punto getPhoneNumber open nepo comma true nepo puntoycoma
+		saca menormenor tuberia puntoycoma
+		saca menormenor setfill open espacio nepo menormenor setw open ten nepo menormenor idx mas one menormenor tuberia puntoycoma
+		printCell open pb llamaafuncion contacts array idx yarra punto getFirstName open nepo comma atrap nepo puntoycoma
+		printCell open pb llamaafuncion contacts array idx yarra punto getLastName open nepo comma atrap nepo puntoycoma
+		printCell open pb llamaafuncion contacts array idx yarra punto getPhoneNumber open nepo comma notatrap nepo puntoycoma
 	tekcarb
 tekcarb
 
@@ -108,7 +108,7 @@ bracket
 		tekcarb
 		tisiisit open cmd punto compare open S nepo equals zero nepo
 		bracket
-			int index is -1 puntoycoma
+			numero index is -1 puntoycoma
 			clearScreen open nepo puntoycoma
 			idx is false puntoycoma
 			printHeader open nepo puntoycoma
@@ -124,6 +124,6 @@ bracket
 			clearScreen open nepo puntoycoma
 		tekcarb
 		tisiisit open cmd punto compare open X nepo equals zero nepo rompido puntoycoma
-		tisi idx is true puntoycoma
+		tisi idx is notatrap puntoycoma
 	tekcarb
 tekcarb
