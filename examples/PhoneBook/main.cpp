@@ -3,7 +3,7 @@
 
 #include "../../madness.hpp"
 
-#define c1 color(rojo)
+#define c1 color rojo
 #define c2 color(verde)
 #define c3 color(amarillo)
 #define reset color(zero)
