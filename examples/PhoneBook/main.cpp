@@ -46,7 +46,7 @@ bracket
 	clearScreen open nepo puntoycoma
 tekcarb
 
-vacio printCell open muchoscaracteres text comma bool nl nepo
+vacio printCell open muchoscaracteres text comma rumor nl nepo
 bracket
 	isit open text punto length open nepo mayor ten nepo
 	bracket
@@ -79,8 +79,8 @@ tekcarb
 
 vacio printContact open contacto contact nepo
 bracket
-	saca menormenor "First" menormenor espacio menormenor "Name:" menormenor espacio menormenor contact punto getFirstName open nepo menormenor aaah puntoycoma
-	saca menormenor "Last" menormenor espacio menormenor "Name:" menormenor espacio menormenor contact punto getLastName open nepo menormenor aaah puntoycoma
+	saca menormenor texto ff comma i comma r comma s comma t otxet menormenor espacio menormenor texto nn comma a comma m comma e comma dospuntosascii otxet menormenor espacio menormenor contact punto getFirstName open nepo menormenor aaah puntoycoma
+	saca menormenor "Last" menormenor espacio menormenor texto nn comma a comma m comma e comma dospuntosascii otxet menormenor espacio menormenor contact punto getLastName open nepo menormenor aaah puntoycoma
 	saca menormenor "Nickname:" menormenor espacio menormenor contact punto getNickname open nepo menormenor aaah puntoycoma
 	saca menormenor "Phone" menormenor espacio menormenor "Number:" menormenor espacio menormenor contact punto getPhoneNumber open nepo menormenor aaah puntoycoma
 	saca menormenor "Darkest" menormenor espacio menormenor "Secret:" menormenor espacio menormenor contact punto getDarkestSecret open nepo menormenor aaah puntoycoma
@@ -91,26 +91,24 @@ bracket
 	muchoscaracteres cmd puntoycoma
 	librodetelefonos pb puntoycoma
 	rumor idx is atrap puntoycoma
-
 	clearScreen open nepo puntoycoma
 	mientras open notatrap nepo
 	bracket
 		idx interrogation saca menormenor I menormenor cmd menormenor reset menormenor aaah dospuntos saca menormenor aaah puntoycoma
 		saca menormenor aaah menormenor Opt menormenor aaah menormenor App menormenor Spp menormenor Xpp menormenor aaah puntoycoma
 		saca menormenor E puntoycoma
-
 		isit open no open getline open mete comma cmd nepo nepo nepo potar one puntoycoma
 		clearScreen open nepo puntoycoma
 		isit open cmd punto compare open A nepo equals zero nepo
 		bracket
-			idx is false puntoycoma
+			idx is atrap puntoycoma
 			addContact open ydivididoentreocho pb nepo puntoycoma
 		tekcarb
 		tisiisit open cmd punto compare open S nepo equals zero nepo
 		bracket
 			numero index is -1 puntoycoma
 			clearScreen open nepo puntoycoma
-			idx is false puntoycoma
+			idx is atrap puntoycoma
 			printHeader open nepo puntoycoma
 			printContacts open ydivididoentreocho pb nepo puntoycoma
 			saca menormenor "Select an contact index: " puntoycoma
